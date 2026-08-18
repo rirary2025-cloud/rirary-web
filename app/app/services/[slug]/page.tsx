@@ -58,6 +58,16 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
           <div className="editorial-body">
             <p className="body-lg">{item.detail}</p>
+            {item.facts ? (
+              <dl className="service-fact-list">
+                {item.facts.map((fact) => (
+                  <div className="service-fact-row" key={fact.label}>
+                    <dt>{fact.label}</dt>
+                    <dd>{fact.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            ) : null}
             <div className="capability-list">
               {item.capabilities.map((capability, index) => (
                 <div className="capability-row" key={capability}>

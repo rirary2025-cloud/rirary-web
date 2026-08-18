@@ -18,6 +18,7 @@ export type Business = {
   capabilities: readonly string[];
   forWho: readonly string[];
   approach: readonly string[];
+  facts?: readonly { label: string; value: string }[];
 };
 
 export const businesses: readonly Business[] = [
@@ -71,10 +72,16 @@ export const businesses: readonly Business[] = [
     en: "CACAO IMPORT",
     ja: "カカオ加工品の輸入事業",
     description: "海外のカカオ加工品を日本国内へ届けるための輸入・流通事業を展開します。",
-    detail: "必要な事業者登録・申請・確認を済ませたうえで、カカオ加工品の輸入から国内での販売・卸相談までを進めます。地域の飲食店、小売店、事業者との連携も見据え、商品そのものだけでなく、届け方や売り方まで設計します。",
+    detail: "必要な事業者登録・申請・確認を済ませたうえで、西アフリカのコートジボワールで生産・加工された天然カカオの加工品を輸入し、国内での販売・卸相談までを進めます。地域の飲食店、小売店、事業者との連携も見据え、商品そのものだけでなく、届け方や売り方まで設計します。",
     capabilities: ["カカオ加工品の輸入", "国内販売・卸相談", "食品表示・品質確認の運用", "商品企画・販売導線設計", "飲食店・小売店との連携"],
     forWho: ["特徴のあるカカオ加工品を取り扱いたい", "店舗や商品企画に新しい素材を取り入れたい", "海外食品の輸入・販売導線を相談したい"],
     approach: ["取扱商品の内容と用途を確認", "輸入・表示・品質面の確認を整理", "販売先や卸先に合わせた導線を設計", "小さく流通させ、反応を見ながら展開"],
+    facts: [
+      { label: "生産・加工国", value: "コートジボワール" },
+      { label: "地域", value: "西アフリカ" },
+      { label: "品質", value: "天然カカオ" },
+      { label: "事業状況", value: "事業者登録・申請・確認済み" },
+    ],
   },
 ] as const;
 
