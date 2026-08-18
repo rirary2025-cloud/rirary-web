@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "rirary.net" }],
+        destination: "https://www.rirary.net/:path*",
+        statusCode: 301,
+      },
       // Confirmed legacy Wix URLs. Explicit 301 preserves migration intent.
       { source: "/共創", destination: "/about", statusCode: 301 },
       { source: "/book-online", destination: "/contact", statusCode: 301 },
