@@ -17,6 +17,7 @@ Rebuild the current Wix website as a modern code-based corporate website that ca
 - CREATIVE / クリエイティブ
 - BUSINESS SUPPORT / 事業支援
 - COMMERCE / コマース
+- CACAO IMPORT / カカオ加工品の輸入事業
 
 ## Independent strategic section
 - REGIONAL PROJECT / 地域活性化事業

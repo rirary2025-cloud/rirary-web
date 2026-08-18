@@ -26,6 +26,7 @@ Updated: 2026-08-18 JST
 ## Content / assets
 - Official logo integration: verified by preflight assets and current `BrandMark` usage. The unused development placeholder mark file has been removed.
 - HOME/ABOUT UI: updated toward the requested Tailor App-like editorial rhythm using Rirary-owned content and without copying Tailor text/images.
+- Services: `CACAO IMPORT / カカオ加工品の輸入事業` has been added as the fifth business area after the user confirmed the required business registration, application, and checks are complete.
 - WORKS production data: Jimoko case study plus four official LINE construction/operation case studies added; further entries still require approval.
 - NEWS production data: v1.0 launch state is accepted empty. Future announcements require approved publication data.
 - NEWS decision support: `docs/news-publication-decision-v1.0.md` has been added.

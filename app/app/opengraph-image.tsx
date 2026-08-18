@@ -49,7 +49,7 @@ export default function Image() {
             <span>New ideas.</span>
           </div>
           <div style={{ fontSize: 24, letterSpacing: "0.08em" }}>
-            DIGITAL / CREATIVE / BUSINESS SUPPORT / COMMERCE
+            DIGITAL / CREATIVE / BUSINESS SUPPORT / COMMERCE / CACAO IMPORT
           </div>
         </div>
         <div style={{ width: 160, height: 16, background: "#f27622", borderRadius: 999 }} />

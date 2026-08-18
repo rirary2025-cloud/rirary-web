@@ -30,7 +30,7 @@ Old framing:
 
 New framing:
 - 北海道の地域課題を、新しい発想で解決する会社。
-- DIGITAL / CREATIVE / BUSINESS SUPPORT / COMMERCE
+- DIGITAL / CREATIVE / BUSINESS SUPPORT / COMMERCE / CACAO IMPORT
 - REGIONAL PROJECT is an independent strategic pillar on the website.
 
 ## Publishing rule

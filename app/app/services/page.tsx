@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContactBand } from "@/components/ui/contact-band";
 import { businesses } from "@/lib/site-data";
 
-export const metadata: Metadata = { title: "事業紹介", description: "株式会社Riraryの4つの事業領域をご紹介します。", alternates: { canonical: "/services" } };
+export const metadata: Metadata = { title: "事業紹介", description: "株式会社Riraryの5つの事業領域をご紹介します。", alternates: { canonical: "/services" } };
 
 export default function ServicesPage() {
   return <main>
