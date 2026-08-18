@@ -19,6 +19,7 @@ export type Business = {
   forWho: readonly string[];
   approach: readonly string[];
   facts?: readonly { label: string; value: string }[];
+  image?: { src: string; alt: string; caption?: string };
 };
 
 export const businesses: readonly Business[] = [
@@ -82,6 +83,11 @@ export const businesses: readonly Business[] = [
       { label: "品質", value: "天然カカオ" },
       { label: "事業状況", value: "事業者登録・申請・確認済み" },
     ],
+    image: {
+      src: "/images/services/cacao-import/cacao-products-overview.png",
+      alt: "カカオ豆、天然カカオケーキ、カカオバター、カカオリカーの輸入品イメージ",
+      caption: "コートジボワールで生産・加工された天然カカオ加工品",
+    },
   },
 ] as const;
 

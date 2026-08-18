@@ -844,6 +844,9 @@ button { font: inherit; }
 .service-fact-row { display: grid; grid-template-columns: minmax(120px, .42fr) 1fr; gap: 18px; padding: 15px 0; border-bottom: 1px solid var(--color-border); }
 .service-fact-row dt { color: var(--color-muted); font-size: .78rem; font-weight: 800; letter-spacing: .08em; }
 .service-fact-row dd { margin: 0; color: var(--color-ink); font-weight: 700; line-height: 1.6; }
+.service-feature-image { position: relative; overflow: hidden; margin: 30px 0 26px; min-height: 280px; aspect-ratio: 16 / 9; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-white); }
+.service-feature-image img { object-fit: contain; padding: 12px; }
+.service-feature-image figcaption { position: absolute; left: 16px; bottom: 14px; max-width: calc(100% - 32px); padding: 8px 11px; border-radius: 999px; background: rgba(255, 255, 255, .92); color: var(--color-ink); font-size: .78rem; font-weight: 800; line-height: 1.4; }
 .section-soft { background: var(--color-surface); }
 .two-column-cards { display: grid; gap: 18px; }
 .info-panel { padding: 32px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-white); }

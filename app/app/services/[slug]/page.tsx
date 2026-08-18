@@ -58,6 +58,12 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
           <div className="editorial-body">
             <p className="body-lg">{item.detail}</p>
+            {item.image ? (
+              <figure className="service-feature-image">
+                <Image src={item.image.src} alt={item.image.alt} fill sizes="(min-width: 980px) 48vw, 100vw" />
+                {item.image.caption ? <figcaption>{item.image.caption}</figcaption> : null}
+              </figure>
+            ) : null}
             {item.facts ? (
               <dl className="service-fact-list">
                 {item.facts.map((fact) => (
