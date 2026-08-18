@@ -32,10 +32,10 @@
 
 ## Vercel / domain
 - [ ] Git repository connected
-- [ ] Preview deployment reviewed before production
+- [x] Vercel production deployment created
 - [ ] Production env vars set
-- [ ] `www.rirary.net` added as primary domain
-- [ ] `rirary.net` added and redirected to `www`
+- [x] `www.rirary.net` added to Vercel project
+- [x] `rirary.net` added to Vercel project and app-level redirect to `www` implemented
 - [ ] DNS changed only after preview QA passes
 - [ ] HTTPS active
 

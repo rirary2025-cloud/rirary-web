@@ -1,14 +1,15 @@
 # Pre-deploy Report
 
-Status: VERCEL DEPLOYMENT CREATED / EXTERNAL BLOCKERS REMAIN
+Status: VERCEL PRODUCTION READY / DNS CUTOVER REQUIRED
 
-Updated: 2026-08-18 JST
+Updated: 2026-08-19 JST
 
 ## Automated checks
 - Preflight: passed via `npm run verify`
 - Lint: passed via `npm run verify`
 - Production build: passed via `npm run verify`
 - Latest local verification: `npm run verify` passed on 2026-08-18 JST with 0 blockers and 0 warnings after switching visual assets to local copies from the legacy Rirary site.
+- Latest production verification: `npm run verify` passed on 2026-08-19 JST before production deployment.
 - Local SEO/system checks: `/robots.txt` returned 200, `/sitemap.xml` returned 200, unknown routes returned 404, canonical resolved to `https://www.rirary.net`, and Organization JSON-LD was present in the rendered HOME HTML.
 
 ## Visual QA
@@ -47,16 +48,37 @@ Updated: 2026-08-18 JST
 - Confirm the `/contact` mail app flow on desktop and smartphone, and verify LINE / EMAIL / PHONE fallback links.
 - Confirm the Jimoko asset usage permissions and supply/approve any additional NEWS or WORKS entries.
 - Confirm company/contact details and privacy policy wording before production launch.
-- Complete Vercel authenticated deployment QA and full Wix/Search Console URL inventory before DNS cutover.
+- Complete final real-device QA and full Wix/Search Console URL inventory before DNS cutover.
 
 ## Deployment boundary
-Vercel deployment was executed after explicit user approval on 2026-08-18 JST.
+Vercel production deployment was executed after explicit user approval on 2026-08-19 JST.
 
-- Deployment ID: `dpl_xwH4y3Q7XY28v7aS2NLQdYphpue3`
-- URL: `https://rirary-ik0cz3j74-rirary2025-clouds-projects.vercel.app`
+- Deployment ID: `dpl_9kLctRp4konFVtDWMu99n81ncKYx`
+- URL: `https://rirary-hn7zpkguu-rirary2025-clouds-projects.vercel.app`
 - Alias shown by Vercel: `https://rirary-web.vercel.app`
 - Vercel target reported by CLI: `production`
-- Current external access: Vercel Authentication redirects unauthenticated requests to Vercel SSO with `X-Robots-Tag: noindex`.
+- Custom domain aliases shown by Vercel: `https://rirary.net`, `https://www.rirary.net`
+- Verified standard Vercel production URL: `https://rirary-web.vercel.app`
+- Current custom-domain status: domains are attached to Vercel, but DNS still points to Wix.
 
-**CUSTOM DOMAIN / DNS NOT CHANGED.**
-Do not connect `www.rirary.net`, promote, or change DNS unless the user gives a separate explicit instruction.
+## DNS cutover values
+
+Current DNS provider state is still Wix:
+
+- Nameservers: `ns13.wixdns.net`, `ns12.wixdns.net`
+- `www.rirary.net`: currently points to Wix CDN.
+- `rirary.net`: currently points to Wix A records.
+
+Recommended Vercel DNS records:
+
+- `www` CNAME → `b04fa86145047b13.vercel-dns-017.com.`
+- `@` A → `216.198.79.1`
+- `@` A → `64.29.17.1`
+
+Alternative full nameserver transfer:
+
+- `ns1.vercel-dns.com`
+- `ns2.vercel-dns.com`
+
+**DNS NOT CHANGED BY CODEX.**
+After DNS changes, rerun `vercel domains verify www.rirary.net` and `vercel domains verify rirary.net`, then test the live custom domains.
