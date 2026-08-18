@@ -24,7 +24,7 @@ npm run dev
 - [x] 重要な旧URLの301テスト
 - [ ] OGP表示確認
 - [x] sitemap / robots確認
-- [ ] Vercel PreviewでPC/iPhone実機QA
+- [ ] VercelデプロイURLでPC/iPhone実機QA（Vercel Authenticationあり）
 
 ## Can launch empty
 

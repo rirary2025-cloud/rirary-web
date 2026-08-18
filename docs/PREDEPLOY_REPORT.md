@@ -1,6 +1,6 @@
 # Pre-deploy Report
 
-Status: VERIFY PASSED / EXTERNAL BLOCKERS REMAIN
+Status: VERCEL DEPLOYMENT CREATED / EXTERNAL BLOCKERS REMAIN
 
 Updated: 2026-08-18 JST
 
@@ -46,8 +46,16 @@ Updated: 2026-08-18 JST
 - Confirm the `/contact` mail app flow on desktop and smartphone, and verify LINE / EMAIL / PHONE fallback links.
 - Confirm the Jimoko asset usage permissions and supply/approve any additional NEWS or WORKS entries.
 - Confirm company/contact details and privacy policy wording before production launch.
-- Complete Vercel Preview QA and full Wix/Search Console URL inventory before DNS cutover.
+- Complete Vercel authenticated deployment QA and full Wix/Search Console URL inventory before DNS cutover.
 
 ## Deployment boundary
-**DEPLOYMENT NOT EXECUTED.**
-Do not deploy or change DNS unless the user gives a separate explicit instruction.
+Vercel deployment was executed after explicit user approval on 2026-08-18 JST.
+
+- Deployment ID: `dpl_xwH4y3Q7XY28v7aS2NLQdYphpue3`
+- URL: `https://rirary-ik0cz3j74-rirary2025-clouds-projects.vercel.app`
+- Alias shown by Vercel: `https://rirary-web.vercel.app`
+- Vercel target reported by CLI: `production`
+- Current external access: Vercel Authentication redirects unauthenticated requests to Vercel SSO with `X-Robots-Tag: noindex`.
+
+**CUSTOM DOMAIN / DNS NOT CHANGED.**
+Do not connect `www.rirary.net`, promote, or change DNS unless the user gives a separate explicit instruction.
