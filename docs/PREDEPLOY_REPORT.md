@@ -9,6 +9,7 @@ Updated: 2026-08-19 JST
 - Lint: passed via `npm run verify`
 - Production build: passed via `npm run verify`
 - Representative message update: `npm run verify` passed on 2026-08-19 JST after adding `/message`.
+- Representative message production verification: `https://www.rirary.net/message`, `https://rirary.net/message`, and `https://rirary-web.vercel.app/message` returned 200 with the expected page content on 2026-08-19 JST.
 - Latest local verification: `npm run verify` passed on 2026-08-18 JST with 0 blockers and 0 warnings after switching visual assets to local copies from the legacy Rirary site.
 - Latest production verification: `npm run verify` passed on 2026-08-19 JST before production deployment.
 - Live custom-domain verification: `https://www.rirary.net/`, `/services/cacao-import`, `/contact`, `/privacy`, `/robots.txt`, and `/sitemap.xml` returned 200 on 2026-08-19 JST. `https://rirary.net/` returned 301 to `https://www.rirary.net/`.
@@ -58,13 +59,14 @@ Updated: 2026-08-19 JST
 ## Deployment boundary
 Vercel production deployment was executed after explicit user approval on 2026-08-19 JST.
 
-- Deployment ID: `dpl_9kLctRp4konFVtDWMu99n81ncKYx`
-- URL: `https://rirary-hn7zpkguu-rirary2025-clouds-projects.vercel.app`
+- Deployment ID: `dpl_5dua5bQAY3eSzGa6oBAye1ZyDA9o`
+- URL: `https://rirary-2s89j03ug-rirary2025-clouds-projects.vercel.app`
 - Alias shown by Vercel: `https://rirary-web.vercel.app`
 - Vercel target reported by CLI: `production`
 - Custom domain aliases shown by Vercel: `https://rirary.net`, `https://www.rirary.net`
 - Verified standard Vercel production URL: `https://rirary-web.vercel.app`
 - Current custom-domain status: DNS cutover complete and HTTPS live on `www.rirary.net`.
+- Latest production update: representative message page deployed and verified on 2026-08-19 JST. Vercel logs for the new deployment showed only normal `GET /message` and `GET /sitemap.xml` info entries during verification.
 
 ## DNS cutover values
 
