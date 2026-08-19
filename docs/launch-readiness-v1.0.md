@@ -25,8 +25,8 @@ npm run dev
 - [ ] OGP表示確認
 - [x] sitemap / robots確認
 - [x] Vercel本番デプロイ
-- [ ] DNS切替
-- [ ] Vercel本番URLでPC/iPhone実機QA
+- [x] DNS切替
+- [ ] 本番URLでPC/iPhone実機QA
 
 ## Can launch empty
 

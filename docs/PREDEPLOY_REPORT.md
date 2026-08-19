@@ -1,6 +1,6 @@
 # Pre-deploy Report
 
-Status: VERCEL PRODUCTION READY / DNS CUTOVER REQUIRED
+Status: PRODUCTION LIVE / POST-LAUNCH QA REQUIRED
 
 Updated: 2026-08-19 JST
 
@@ -10,6 +10,7 @@ Updated: 2026-08-19 JST
 - Production build: passed via `npm run verify`
 - Latest local verification: `npm run verify` passed on 2026-08-18 JST with 0 blockers and 0 warnings after switching visual assets to local copies from the legacy Rirary site.
 - Latest production verification: `npm run verify` passed on 2026-08-19 JST before production deployment.
+- Live custom-domain verification: `https://www.rirary.net/`, `/services/cacao-import`, `/contact`, `/privacy`, `/robots.txt`, and `/sitemap.xml` returned 200 on 2026-08-19 JST. `https://rirary.net/` returned 301 to `https://www.rirary.net/`.
 - Local SEO/system checks: `/robots.txt` returned 200, `/sitemap.xml` returned 200, unknown routes returned 404, canonical resolved to `https://www.rirary.net`, and Organization JSON-LD was present in the rendered HOME HTML.
 
 ## Visual QA
@@ -49,7 +50,7 @@ Updated: 2026-08-19 JST
 - Confirm the `/contact` mail app flow on desktop and smartphone, and verify LINE / EMAIL / PHONE fallback links.
 - Confirm the Jimoko asset usage permissions and supply/approve any additional NEWS or WORKS entries.
 - Confirm company/contact details and privacy policy wording before production launch.
-- Complete final real-device QA and full Wix/Search Console URL inventory before DNS cutover.
+- Complete final real-device QA, contact mail-app confirmation, and full Wix/Search Console URL inventory monitoring after cutover.
 
 ## Deployment boundary
 Vercel production deployment was executed after explicit user approval on 2026-08-19 JST.
@@ -60,7 +61,7 @@ Vercel production deployment was executed after explicit user approval on 2026-0
 - Vercel target reported by CLI: `production`
 - Custom domain aliases shown by Vercel: `https://rirary.net`, `https://www.rirary.net`
 - Verified standard Vercel production URL: `https://rirary-web.vercel.app`
-- Current custom-domain status: domains are attached to Vercel, but DNS still points to Wix.
+- Current custom-domain status: DNS cutover complete and HTTPS live on `www.rirary.net`.
 
 ## DNS cutover values
 
@@ -81,5 +82,11 @@ Alternative full nameserver transfer:
 - `ns1.vercel-dns.com`
 - `ns2.vercel-dns.com`
 
-**DNS NOT CHANGED BY CODEX.**
-After DNS changes, rerun `vercel domains verify www.rirary.net` and `vercel domains verify rirary.net`, then test the live custom domains.
+DNS cutover was completed in Wix DNS on 2026-08-19 JST and verified with Vercel.
+
+Post-launch checks still required:
+
+- Confirm contact mail-app flow on real devices.
+- Check major pages from smartphone mobile network.
+- Monitor 404s and redirect gaps.
+- Keep the Wix rollback site available until launch risk is acceptable.

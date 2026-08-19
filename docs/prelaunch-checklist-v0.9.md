@@ -36,13 +36,13 @@
 - [ ] Production env vars set
 - [x] `www.rirary.net` added to Vercel project
 - [x] `rirary.net` added to Vercel project and app-level redirect to `www` implemented
-- [ ] DNS changed only after preview QA passes
-- [ ] HTTPS active
+- [x] DNS changed after production setup
+- [x] HTTPS active
 
 ## Launch day
 - [ ] Final Wix backup/export retained
 - [ ] Production deployment succeeds
-- [ ] Domain cutover completed
+- [x] Domain cutover completed
 - [ ] Homepage and major routes checked from mobile network
 - [ ] Redirects checked with old URLs
 - [ ] Contact form tested on production
