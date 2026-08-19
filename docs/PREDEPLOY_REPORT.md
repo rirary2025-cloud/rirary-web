@@ -11,6 +11,7 @@ Updated: 2026-08-19 JST
 - Representative message update: `npm run verify` passed on 2026-08-19 JST after adding `/message`.
 - Representative message production verification: `https://www.rirary.net/message`, `https://rirary.net/message`, and `https://rirary-web.vercel.app/message` returned 200 with the expected page content on 2026-08-19 JST.
 - Representative message mobile/signature refinement: `npm run verify` passed and `https://www.rirary.net/message` returned 200 with `代表取締役` and `佐藤倫稔` present on 2026-08-19 JST.
+- Brand mark update: the user-supplied `rirary-logo-mark.png` was deployed to production and verified at `https://www.rirary.net/brand/rirary-logo-mark.png` on 2026-08-19 JST.
 - Latest local verification: `npm run verify` passed on 2026-08-18 JST with 0 blockers and 0 warnings after switching visual assets to local copies from the legacy Rirary site.
 - Latest production verification: `npm run verify` passed on 2026-08-19 JST before production deployment.
 - Live custom-domain verification: `https://www.rirary.net/`, `/services/cacao-import`, `/contact`, `/privacy`, `/robots.txt`, and `/sitemap.xml` returned 200 on 2026-08-19 JST. `https://rirary.net/` returned 301 to `https://www.rirary.net/`.
@@ -60,14 +61,14 @@ Updated: 2026-08-19 JST
 ## Deployment boundary
 Vercel production deployment was executed after explicit user approval on 2026-08-19 JST.
 
-- Deployment ID: `dpl_7dXft5zVvyZKgnAkXpDDigou86gK`
-- URL: `https://rirary-qm9rj13wt-rirary2025-clouds-projects.vercel.app`
+- Deployment ID: `dpl_QfWgJVs2f7yaGzTCYajKk5hcDHr5`
+- URL: `https://rirary-3964706qy-rirary2025-clouds-projects.vercel.app`
 - Alias shown by Vercel: `https://rirary-web.vercel.app`
 - Vercel target reported by CLI: `production`
 - Custom domain aliases shown by Vercel: `https://rirary.net`, `https://www.rirary.net`
 - Verified standard Vercel production URL: `https://rirary-web.vercel.app`
 - Current custom-domain status: DNS cutover complete and HTTPS live on `www.rirary.net`.
-- Latest production update: representative message mobile layout and signature were refined, deployed, and verified on 2026-08-19 JST.
+- Latest production update: brand mark was updated to the user-supplied image, deployed, and verified on 2026-08-19 JST.
 
 ## DNS cutover values
 
