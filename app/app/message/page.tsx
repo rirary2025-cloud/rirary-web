@@ -49,7 +49,8 @@ export default function MessagePage() {
             ))}
             <div className="message-signature">
               <span>{representativeMessage.signature.company}</span>
-              <strong>{representativeMessage.signature.title}</strong>
+              <span>{representativeMessage.signature.title}</span>
+              <strong>{representativeMessage.signature.name}</strong>
             </div>
           </div>
         </div>

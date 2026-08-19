@@ -818,7 +818,11 @@ button { font: inherit; }
 }
 .message-signature strong {
   color: var(--color-ink);
-  font-size: 1.1rem;
+  font-family: "HGP行書体", "HGS行書体", "Yuji Syuku", "Kaiti SC", "STKaiti", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: .04em;
 }
 .message-commitment-grid {
   display: grid;
@@ -1111,6 +1115,25 @@ button { font: inherit; }
   .message-body p {
     font-size: .98rem;
     line-height: 1.95;
+  }
+
+  .message-layout {
+    width: min(calc(100vw - 64px), var(--container));
+    padding-inline: 0;
+  }
+
+  .message-body {
+    gap: 28px;
+    padding-inline: 0;
+  }
+
+  .message-signature {
+    gap: 10px;
+    padding-right: 2px;
+  }
+
+  .message-signature strong {
+    font-size: 1.75rem;
   }
 
   .message-commitment { padding: 22px; }

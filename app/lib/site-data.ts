@@ -110,7 +110,8 @@ export const representativeMessage = {
   ],
   signature: {
     company: "株式会社Rirary",
-    title: "代表",
+    title: "代表取締役",
+    name: "佐藤倫稔",
   },
 } as const;
 
