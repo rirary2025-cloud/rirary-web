@@ -60,7 +60,13 @@ export default async function ServiceDetailPage({ params }: Props) {
             <p className="body-lg">{item.detail}</p>
             {item.image ? (
               <figure className="service-feature-image">
-                <Image src={item.image.src} alt={item.image.alt} fill sizes="(min-width: 980px) 48vw, 100vw" />
+                <Image
+                  src={item.image.src}
+                  alt={item.image.alt}
+                  width={2048}
+                  height={860}
+                  sizes="(min-width: 980px) 48vw, calc(100vw - 40px)"
+                />
                 {item.image.caption ? <figcaption>{item.image.caption}</figcaption> : null}
               </figure>
             ) : null}

@@ -834,7 +834,10 @@ button { font: inherit; }
 .breadcrumb-item { display: inline-flex; gap: 8px; }
 .page-hero-dark .breadcrumbs { color: color-mix(in srgb, var(--color-on-dark) 62%, transparent); }
 .service-detail-heading { display: grid; gap: 24px; }
+.service-detail-heading > * { min-width: 0; }
 .split-editorial { display: grid; gap: 42px; align-items: start; }
+.split-editorial > *,
+.editorial-body { min-width: 0; }
 .editorial-body { display: grid; gap: 24px; color: var(--color-ink-soft); line-height: 1.85; }
 .capability-list { margin-top: 14px; border-top: 1px solid var(--color-border); }
 .capability-row { display: grid; grid-template-columns: 44px 1fr; gap: 12px; padding: 18px 0; border-bottom: 1px solid var(--color-border); align-items: baseline; }
@@ -844,9 +847,9 @@ button { font: inherit; }
 .service-fact-row { display: grid; grid-template-columns: minmax(120px, .42fr) 1fr; gap: 18px; padding: 15px 0; border-bottom: 1px solid var(--color-border); }
 .service-fact-row dt { color: var(--color-muted); font-size: .78rem; font-weight: 800; letter-spacing: .08em; }
 .service-fact-row dd { margin: 0; color: var(--color-ink); font-weight: 700; line-height: 1.6; }
-.service-feature-image { position: relative; overflow: hidden; margin: 30px 0 26px; min-height: 280px; aspect-ratio: 16 / 9; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-white); }
-.service-feature-image img { object-fit: contain; padding: 12px; }
-.service-feature-image figcaption { position: absolute; left: 16px; bottom: 14px; max-width: calc(100% - 32px); padding: 8px 11px; border-radius: 999px; background: rgba(255, 255, 255, .92); color: var(--color-ink); font-size: .78rem; font-weight: 800; line-height: 1.4; }
+.service-feature-image { position: relative; overflow: hidden; width: 100%; max-width: 100%; margin: 30px 0 26px; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-white); }
+.service-feature-image img { display: block; width: 100%; height: auto; object-fit: contain; }
+.service-feature-image figcaption { margin-top: 12px; color: var(--color-ink); font-size: .78rem; font-weight: 800; line-height: 1.5; }
 .section-soft { background: var(--color-surface); }
 .two-column-cards { display: grid; gap: 18px; }
 .info-panel { padding: 32px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-white); }
@@ -972,20 +975,71 @@ button { font: inherit; }
 
 /* Final responsive type overrides after all page-specific blocks */
 @media (max-width: 767px) {
+  .service-detail-heading,
+  .split-editorial,
+  .editorial-body {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
+  }
+
   .hero-copy,
   .about-hero-grid > *,
   .editorial-copy,
   .page-lead,
   .body-lg {
     min-width: 0;
-    overflow-wrap: normal;
-    word-break: normal;
+    overflow-wrap: anywhere;
+    word-break: break-all;
     line-break: strict;
   }
 
   .page-title {
     font-size: 2.45rem;
     line-height: 1.08;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+  }
+
+  .section-title,
+  .editorial-body,
+  .editorial-body p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+  }
+
+  .service-feature-image {
+    width: calc(100vw - 64px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 64px) !important;
+    margin-inline: auto;
+    border-radius: var(--radius-md);
+  }
+
+  .service-feature-image img {
+    width: 86% !important;
+    max-width: 86% !important;
+    margin-inline: auto;
+  }
+
+  .service-detail-hero .site-container,
+  .section > .site-container.split-editorial {
+    width: calc(100vw - (var(--page-padding) * 2));
+    max-width: calc(100vw - (var(--page-padding) * 2));
+    min-width: 0;
+  }
+
+  .service-detail-hero .page-title {
+    font-size: 2rem;
+    line-height: 1.18;
+  }
+
+  .service-detail-hero .page-lead,
+  .editorial-body .body-lg {
+    font-size: .98rem;
+    line-height: 1.9;
   }
 
   .statement-title {
