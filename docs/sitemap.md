@@ -6,6 +6,7 @@
 - WORKS `/works`
 - REGIONAL PROJECT `/regional-project`
 - ABOUT `/about`
+- MESSAGE `/message`
 - NEWS `/news`
 - CONTACT `/contact`
 
@@ -49,6 +50,10 @@ Company philosophy
 Co-creation philosophy
 Representative/company story if approved
 Company profile
+
+### `/message`
+Representative message
+Company philosophy and regional business stance
 
 ### `/news`
 News/article index

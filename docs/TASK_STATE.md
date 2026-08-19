@@ -25,6 +25,7 @@ Bring the Rirary website to PRE-DEPLOY READY while stopping before any deploymen
 - [x] DONE — Verify public company basics and set privacy representative handling to non-display for v1.0.
 - [x] DONE — Recheck searchable Wix URLs and document current redirect coverage.
 - [x] DONE — Add CACAO IMPORT as a fifth business area for the website.
+- [x] DONE — Add representative message page for brand-building.
 - [!] BLOCKED — Confirm contact flow on real devices, approve privacy/company details, and complete Wix inventory.
 - [x] DONE — Update `docs/PREDEPLOY_REPORT.md`.
 

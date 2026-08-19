@@ -4,7 +4,7 @@ import { works } from "@/content/works";
 import { siteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/services", "/works", "/regional-project", "/about", "/news", "/contact", "/privacy"];
+  const staticRoutes = ["", "/services", "/works", "/regional-project", "/about", "/message", "/news", "/contact", "/privacy"];
   const serviceRoutes = businesses.map((business) => `/services/${business.slug}`);
   const workRoutes = works.map((work) => `/works/${work.slug}`);
 

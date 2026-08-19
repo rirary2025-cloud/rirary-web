@@ -8,6 +8,7 @@ Updated: 2026-08-19 JST
 - Preflight: passed via `npm run verify`
 - Lint: passed via `npm run verify`
 - Production build: passed via `npm run verify`
+- Representative message update: `npm run verify` passed on 2026-08-19 JST after adding `/message`.
 - Latest local verification: `npm run verify` passed on 2026-08-18 JST with 0 blockers and 0 warnings after switching visual assets to local copies from the legacy Rirary site.
 - Latest production verification: `npm run verify` passed on 2026-08-19 JST before production deployment.
 - Live custom-domain verification: `https://www.rirary.net/`, `/services/cacao-import`, `/contact`, `/privacy`, `/robots.txt`, and `/sitemap.xml` returned 200 on 2026-08-19 JST. `https://rirary.net/` returned 301 to `https://www.rirary.net/`.
@@ -19,6 +20,7 @@ Updated: 2026-08-19 JST
 - 1024px: checked with local Chrome screenshots for HOME and ABOUT during this run.
 - 1440px: checked with local Chrome screenshots for HOME and ABOUT during this run.
 - Legacy image refresh: HOME was rechecked with local Chrome screenshots after replacing the hero and regional visual slots. Screenshots are saved under `docs/qa-screenshots/`.
+- Representative message page: `/message`, `/about`, and `/sitemap.xml` returned 200 locally on 2026-08-19 JST; screenshot capture for `/message` failed because local Chrome headless exited with GPU errors.
 - Notes: Chrome emitted local Windows geolocation/update warnings during screenshot capture; screenshots were still written. Final real-device and Vercel Preview QA remain required before DNS cutover.
 
 ## Route QA
@@ -30,6 +32,7 @@ Updated: 2026-08-19 JST
 - HOME/ABOUT UI: updated toward the requested Tailor App-like editorial rhythm using Rirary-owned content and without copying Tailor text/images.
 - Services: `CACAO IMPORT / カカオ加工品の輸入事業` has been added as the fifth business area after the user confirmed the required business registration, application, and checks are complete.
 - Cacao import visual: the user-supplied product/logistics image has been added to `/services/cacao-import` and verified on the Vercel production URL.
+- Representative message: `/message` has been added with company-positioning copy, a safe non-name signature, and links from ABOUT/footer.
 - WORKS production data: Jimoko case study plus four official LINE construction/operation case studies added; further entries still require approval.
 - NEWS production data: v1.0 launch state is accepted empty. Future announcements require approved publication data.
 - NEWS decision support: `docs/news-publication-decision-v1.0.md` has been added.

@@ -23,6 +23,7 @@ export function SiteFooter() {
           <Link href="/works">実績</Link>
           <Link href="/regional-project">地域活性化事業</Link>
           <Link href="/about">会社情報</Link>
+          <Link href="/message">代表挨拶</Link>
           <Link href="/contact">お問い合わせ</Link>
         </div>
         <div className="footer-meta">

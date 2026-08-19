@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { company, principles } from "@/lib/site-data";
 import { ContactBand } from "@/components/ui/contact-band";
 
@@ -61,6 +62,10 @@ export default function AboutPage() {
           <div>
             <span className="eyebrow">COMPANY INFORMATION</span>
             <h2 className="section-title section-title-spaced">会社情報</h2>
+            <p className="body-lg about-message-link-copy">
+              Riraryの考え方と、地域に向き合う姿勢を代表挨拶としてまとめています。
+            </p>
+            <Link className="text-link" href="/message">代表挨拶を見る ↗</Link>
           </div>
           <dl className="company-table company-table-large">
             <div><dt>会社名</dt><dd>{company.name}</dd></div>
