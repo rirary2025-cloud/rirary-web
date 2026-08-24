@@ -20,6 +20,11 @@ export type Business = {
   approach: readonly string[];
   facts?: readonly { label: string; value: string }[];
   image?: { src: string; alt: string; caption?: string };
+  bridge?: {
+    eyebrow: string;
+    title: string;
+    paragraphs: readonly string[];
+  };
 };
 
 export const businesses: readonly Business[] = [
@@ -87,6 +92,15 @@ export const businesses: readonly Business[] = [
       src: "/images/services/cacao-import/cacao-products-overview.png",
       alt: "カカオ豆、天然カカオケーキ、カカオバター、カカオリカーの輸入品イメージ",
       caption: "コートジボワールで生産・加工された天然カカオ加工品",
+    },
+    bridge: {
+      eyebrow: "INTERNATIONAL BUSINESS SUPPORT",
+      title: "コートジボワールと日本をつなぐ架け橋に",
+      paragraphs: [
+        "Riraryは、カカオ加工品の輸入を通じて、西アフリカ・コートジボワールと日本をつなぐ架け橋となることを目指しています。",
+        "現地で生産・加工された天然カカオ加工品を日本国内へ届けるだけでなく、地域の飲食店・小売店・事業者との連携を通じて、新しい商流と事業機会を創造していきます。",
+        "将来的には、日本の地域企業や商品の海外展開支援にも取り組み、コートジボワールをはじめとする海外とのつながりを、地域の新しい可能性へ広げていきます。",
+      ],
     },
   },
 ] as const;

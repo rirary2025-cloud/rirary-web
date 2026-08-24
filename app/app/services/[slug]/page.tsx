@@ -70,6 +70,15 @@ export default async function ServiceDetailPage({ params }: Props) {
                 {item.image.caption ? <figcaption>{item.image.caption}</figcaption> : null}
               </figure>
             ) : null}
+            {item.bridge ? (
+              <section className="service-bridge-panel" aria-labelledby={`${item.slug}-bridge-title`}>
+                <span className="eyebrow">{item.bridge.eyebrow}</span>
+                <h2 id={`${item.slug}-bridge-title`}>{item.bridge.title}</h2>
+                {item.bridge.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </section>
+            ) : null}
             {item.facts ? (
               <dl className="service-fact-list">
                 {item.facts.map((fact) => (
