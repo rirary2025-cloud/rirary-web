@@ -15,6 +15,7 @@ Updated: 2026-08-24 JST
 - Cacao bridge messaging update: `npm run verify` passed on 2026-08-24 JST after adding `コートジボワールと日本をつなぐ架け橋に` and overseas expansion support wording to `/services/cacao-import`.
 - Cacao bridge production verification: `https://www.rirary.net/services/cacao-import`, `https://rirary.net/services/cacao-import`, and `https://rirary-web.vercel.app/services/cacao-import` returned 200 with the expected bridge/support wording on 2026-08-24 JST.
 - Cacao partner messaging update: `npm run verify` passed on 2026-08-24 JST after adding factual information-exchange wording about mining and infrastructure project opportunities with local suppliers and business leaders.
+- Cacao partner production verification: `https://www.rirary.net/services/cacao-import`, `https://rirary.net/services/cacao-import`, and `https://rirary-web.vercel.app/services/cacao-import` returned 200 with mining, infrastructure, local supplier, and business leader wording on 2026-08-24 JST.
 - Latest local verification: `npm run verify` passed on 2026-08-18 JST with 0 blockers and 0 warnings after switching visual assets to local copies from the legacy Rirary site.
 - Latest production verification: `npm run verify` passed on 2026-08-19 JST before production deployment.
 - Live custom-domain verification: `https://www.rirary.net/`, `/services/cacao-import`, `/contact`, `/privacy`, `/robots.txt`, and `/sitemap.xml` returned 200 on 2026-08-19 JST. `https://rirary.net/` returned 301 to `https://www.rirary.net/`.
@@ -66,14 +67,14 @@ Updated: 2026-08-24 JST
 ## Deployment boundary
 Vercel production deployment was executed after explicit user approval on 2026-08-19 JST.
 
-- Deployment ID: `dpl_h2wWypbs4A2uA5krpHRFoq4Fi1di`
-- URL: `https://rirary-q8rn0uz0y-rirary2025-clouds-projects.vercel.app`
+- Deployment ID: `dpl_HoCupZY4DvDoqh9c9h1TCnCH2BcK`
+- URL: `https://rirary-fqmm8rcjh-rirary2025-clouds-projects.vercel.app`
 - Alias shown by Vercel: `https://rirary-web.vercel.app`
 - Vercel target reported by CLI: `production`
 - Custom domain aliases shown by Vercel: `https://rirary.net`, `https://www.rirary.net`
 - Verified standard Vercel production URL: `https://rirary-web.vercel.app`
 - Current custom-domain status: DNS cutover complete and HTTPS live on `www.rirary.net`.
-- Latest production update: Cacao import bridge/support messaging was deployed and verified on 2026-08-24 JST.
+- Latest production update: Cacao import partner opportunity messaging for mining and infrastructure information exchange was deployed and verified on 2026-08-24 JST.
 
 ## DNS cutover values
 
