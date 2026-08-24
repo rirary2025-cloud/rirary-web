@@ -14,6 +14,7 @@ Updated: 2026-08-24 JST
 - Brand mark update: the user-supplied `rirary-logo-mark.png` was deployed to production and verified at `https://www.rirary.net/brand/rirary-logo-mark.png` on 2026-08-19 JST.
 - Cacao bridge messaging update: `npm run verify` passed on 2026-08-24 JST after adding `コートジボワールと日本をつなぐ架け橋に` and overseas expansion support wording to `/services/cacao-import`.
 - Cacao bridge production verification: `https://www.rirary.net/services/cacao-import`, `https://rirary.net/services/cacao-import`, and `https://rirary-web.vercel.app/services/cacao-import` returned 200 with the expected bridge/support wording on 2026-08-24 JST.
+- Cacao partner messaging update: `npm run verify` passed on 2026-08-24 JST after adding factual information-exchange wording about mining and infrastructure project opportunities with local suppliers and business leaders.
 - Latest local verification: `npm run verify` passed on 2026-08-18 JST with 0 blockers and 0 warnings after switching visual assets to local copies from the legacy Rirary site.
 - Latest production verification: `npm run verify` passed on 2026-08-19 JST before production deployment.
 - Live custom-domain verification: `https://www.rirary.net/`, `/services/cacao-import`, `/contact`, `/privacy`, `/robots.txt`, and `/sitemap.xml` returned 200 on 2026-08-19 JST. `https://rirary.net/` returned 301 to `https://www.rirary.net/`.
@@ -37,6 +38,7 @@ Updated: 2026-08-24 JST
 - HOME/ABOUT UI: updated toward the requested Tailor App-like editorial rhythm using Rirary-owned content and without copying Tailor text/images.
 - Services: `CACAO IMPORT / カカオ加工品の輸入事業` has been added as the fifth business area after the user confirmed the required business registration, application, and checks are complete.
 - CACAO IMPORT now includes a public-facing bridge message positioning Rirary as a connector between Cote d'Ivoire and Japan, with future overseas expansion support described as a forward-looking area.
+- CACAO IMPORT also notes information exchange with local suppliers and business leaders around mining and infrastructure opportunities; wording intentionally avoids claiming project participation, rights, contracts, or operational responsibility.
 - Cacao import visual: the user-supplied product/logistics image has been added to `/services/cacao-import` and verified on the Vercel production URL.
 - Representative message: `/message` has been added with company-positioning copy, a safe non-name signature, and links from ABOUT/footer.
 - WORKS production data: Jimoko case study plus four official LINE construction/operation case studies added; further entries still require approval.

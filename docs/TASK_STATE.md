@@ -26,6 +26,7 @@ Bring the Rirary website to PRE-DEPLOY READY while stopping before any deploymen
 - [x] DONE — Recheck searchable Wix URLs and document current redirect coverage.
 - [x] DONE — Add CACAO IMPORT as a fifth business area for the website.
 - [x] DONE — Add Cote d'Ivoire/Japan bridge messaging to CACAO IMPORT.
+- [x] DONE — Add local supplier/CEO information-exchange wording for mining and infrastructure project opportunities.
 - [x] DONE — Add representative message page for brand-building.
 - [!] BLOCKED — Confirm contact flow on real devices, approve privacy/company details, and complete Wix inventory.
 - [x] DONE — Update `docs/PREDEPLOY_REPORT.md`.
