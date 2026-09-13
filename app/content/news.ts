@@ -5,6 +5,10 @@ export type NewsItem = {
   title: string;
   summary?: string;
   body?: readonly string[];
+  links?: readonly {
+    label: string;
+    href: string;
+  }[];
 };
 
 // 正式に公開するお知らせのみ追加する。
@@ -21,5 +25,6 @@ export const news: readonly NewsItem[] = [
       "「みんなで発信」は、LINEに写真とひと言を送るだけで、Instagram・TikTok・Facebook・X・Threadsなど各SNSに合わせた投稿文とハッシュタグを作成できるサービスです。",
       "発信担当者だけに負担が集中しないよう、店主やスタッフがそれぞれのタイミングで日常の情報を発信しやすくすることを目指しています。",
     ],
+    links: [{ label: "みんなで発信のサイトを見る", href: "https://minna-de-deploy.com/" }],
   },
 ];

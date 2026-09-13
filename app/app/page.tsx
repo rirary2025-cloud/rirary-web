@@ -164,7 +164,7 @@ export default function Home() {
           </div>
           {news.length ? <div className="news-list">
             {news.slice(0, 3).map((item) => (
-              <div className="news-item" key={item.slug}><time dateTime={item.date}>{item.date.replaceAll("-", ".")}</time><span className="news-category">{item.category}</span><strong>{item.title}</strong><span className="news-arrow">↗</span></div>
+              <Link className="news-item" href={`/news/${item.slug}`} key={item.slug} aria-label={`${item.title}の詳細を見る`}><time dateTime={item.date}>{item.date.replaceAll("-", ".")}</time><span className="news-category">{item.category}</span><strong>{item.title}</strong><span className="news-arrow" aria-hidden="true">↗</span></Link>
             ))}
           </div> : <div className="empty-state"><strong>NEWS COMING SOON</strong><p>正式なお知らせを確認後に掲載します。</p></div>}
         </div>
