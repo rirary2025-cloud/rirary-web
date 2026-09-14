@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "株式会社Rirary｜北海道の地域課題を、新しい発想で解決する会社。";
+export const alt = "株式会社Rirary｜地方の課題を、新しい発想で解決する会社。";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -32,7 +32,7 @@ export default function Image() {
             />
             <div style={{ fontSize: 36, fontWeight: 700 }}>Rirary</div>
           </div>
-          <div style={{ fontSize: 20, letterSpacing: "0.12em" }}>HOKKAIDO / JAPAN</div>
+          <div style={{ fontSize: 20, letterSpacing: "0.12em" }}>LOCAL / JAPAN</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div

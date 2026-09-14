@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName}｜北海道の地域課題を、新しい発想で解決する会社。`,
+    default: `${siteName}｜地方の課題を、新しい発想で解決する会社。`,
     template: `%s｜${siteName}`,
   },
   description: defaultDescription,
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     url: "/",
     siteName,
-    title: `${siteName}｜北海道の地域課題を、新しい発想で解決する会社。`,
+    title: `${siteName}｜地方の課題を、新しい発想で解決する会社。`,
     description: defaultDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName}｜北海道の地域課題を、新しい発想で解決する会社。`,
+    title: `${siteName}｜地方の課題を、新しい発想で解決する会社。`,
     description: defaultDescription,
   },
   robots: {

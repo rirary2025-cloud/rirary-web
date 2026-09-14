@@ -15,7 +15,7 @@ export default function AboutPage() {
             <h1 className="page-title">Rirary<br className="mobile-only-break" />について</h1>
           </div>
           <p className="body-lg page-lead reveal reveal-delay-1">
-            北海道の地域課題に向き合い、デジタル・クリエイティブ・事業支援・コマースを組み合わせて、地域に合う実行方法をつくる会社です。
+            地方の課題に向き合い、デジタル・クリエイティブ・事業支援・コマースを組み合わせて、地域に合う実行方法をつくる会社です。
           </p>
         </div>
       </section>
@@ -24,8 +24,8 @@ export default function AboutPage() {
         <div className="site-container statement-stack">
           <span className="eyebrow">MISSION</span>
           <h2 className="statement-title">
-            北海道の<br className="mobile-only-break" />
-            地域課題を、<br />
+            地方の<br className="mobile-only-break" />
+            課題を、<br />
             新しい発想で<br className="mobile-only-break" />
             解決する。
           </h2>

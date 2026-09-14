@@ -27,7 +27,7 @@ export default function MessagePage() {
           <div>
             <span className="eyebrow">STATEMENT</span>
             <h2 className="section-title section-title-spaced message-statement-title">
-              北海道の地域課題を、
+              地方の課題を、
               <br />
               新しい発想で解決する。
             </h2>

@@ -8,8 +8,8 @@ export function HomeHero() {
         <div className="hero-copy reveal">
           <span className="eyebrow hero-kicker">COMPANY / RIRARY</span>
           <h1 className="display-title">
-            北海道の<br className="mobile-only-break" />
-            地域課題を、<br />
+            地方の<br className="mobile-only-break" />
+            課題を、<br />
             新しい発想で<br className="mobile-only-break" />
             解決する会社。
           </h1>
@@ -32,7 +32,7 @@ export function HomeHero() {
             className="hero-photo"
           />
           <div className="hero-photo-caption">
-            <span>HOKKAIDO</span>
+            <span>LOCAL</span>
             <strong>地域の風景から、事業を考える。</strong>
           </div>
         </div>
