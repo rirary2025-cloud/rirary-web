@@ -37,9 +37,9 @@ Updated: 2026-08-24 JST
 ## Content / assets
 - Official logo integration: verified by preflight assets and current `BrandMark` usage. The unused development placeholder mark file has been removed.
 - HOME/ABOUT UI: updated toward the requested Tailor App-like editorial rhythm using Rirary-owned content and without copying Tailor text/images.
-- Services: `CACAO IMPORT / カカオ加工品の輸入事業` has been added as the fifth business area after the user confirmed the required business registration, application, and checks are complete.
-- CACAO IMPORT now includes a public-facing bridge message positioning Rirary as a connector between Cote d'Ivoire and Japan, with future overseas expansion support described as a forward-looking area.
-- CACAO IMPORT also notes information exchange with local suppliers and business leaders around mining and infrastructure opportunities; wording intentionally avoids claiming project participation, rights, contracts, or operational responsibility.
+- Services: the fifth business area is now positioned as `WEST AFRICA BUSINESS / 西アフリカ連携事業`, with the existing `/services/cacao-import` URL retained for continuity.
+- West Africa Business now presents cacao processed products as one part of broader supplier collaboration with Cote d'Ivoire / West Africa.
+- Public wording covers cacao processed products, coffee beans, mining project coordination, Japanese product expansion support, and Cote d'Ivoire urban development projects while avoiding unverified partner names, contract terms, rights, outcomes, or metrics.
 - Cacao import visual: the user-supplied product/logistics image has been added to `/services/cacao-import` and verified on the Vercel production URL.
 - Representative message: `/message` has been added with company-positioning copy, a safe non-name signature, and links from ABOUT/footer.
 - WORKS production data: Jimoko case study plus four official LINE construction/operation case studies added; further entries still require approval.

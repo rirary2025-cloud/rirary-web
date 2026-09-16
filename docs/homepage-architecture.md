@@ -28,7 +28,7 @@ Four business pillars:
 - CREATIVE / クリエイティブ
 - BUSINESS SUPPORT / 事業支援
 - COMMERCE / コマース
-- CACAO IMPORT / カカオ加工品の輸入事業
+- WEST AFRICA BUSINESS / 西アフリカ連携事業
 Each card: one outcome-oriented sentence + detail link.
 
 ### 04 APPROACH

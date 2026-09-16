@@ -34,6 +34,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   const { slug } = await params;
   const item = businesses.find((business) => business.slug === slug);
   if (!item) notFound();
+  const isWestAfricaBusiness = item.slug === "cacao-import";
 
   return (
     <main>
@@ -43,7 +44,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className="service-detail-heading">
             <div>
               <span className="eyebrow">{item.no} / {item.en}</span>
-              <h1 className="page-title">{item.ja}</h1>
+              <h1 className="page-title">{item.heroTitle ?? item.ja}</h1>
             </div>
             <p className="body-lg page-lead">{item.description}</p>
           </div>
@@ -54,7 +55,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="site-container split-editorial">
           <div>
             <span className="eyebrow">WHAT WE DO</span>
-            <h2 className="section-title">必要な手段を、<br />課題から逆算する。</h2>
+            <h2 className="section-title">{isWestAfricaBusiness ? <>西アフリカとの連携を、<br />事業機会に変える。</> : <>必要な手段を、<br />課題から逆算する。</>}</h2>
           </div>
           <div className="editorial-body">
             <p className="body-lg">{item.detail}</p>
