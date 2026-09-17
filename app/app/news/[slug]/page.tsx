@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -55,6 +56,22 @@ export default async function NewsDetailPage({ params }: Props) {
             {(item.body?.length ? item.body : item.summary ? [item.summary] : []).map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
+
+            {item.promo && (
+              <section className="news-promo-panel" aria-labelledby="news-promo-title">
+                <div className="news-promo-logo">
+                  <Image src={item.promo.logo.src} alt={item.promo.logo.alt} width={1210} height={433} sizes="(min-width: 720px) 520px, calc(100vw - 72px)" />
+                </div>
+                <div>
+                  <span className="eyebrow">{item.promo.eyebrow}</span>
+                  <h2 id="news-promo-title">{item.promo.title}</h2>
+                  <p>{item.promo.description}</p>
+                  <Link className="btn button-dark" href={item.promo.document.href} target="_blank" rel="noreferrer">
+                    {item.promo.document.label} ↗
+                  </Link>
+                </div>
+              </section>
+            )}
 
             {item.links && item.links.length > 0 && (
               <section className="news-detail-links" aria-labelledby="news-related-links">

@@ -9,6 +9,19 @@ export type NewsItem = {
     label: string;
     href: string;
   }[];
+  promo?: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    logo: {
+      src: string;
+      alt: string;
+    };
+    document: {
+      label: string;
+      href: string;
+    };
+  };
 };
 
 // 正式に公開するお知らせのみ追加する。
@@ -40,5 +53,19 @@ export const news: readonly NewsItem[] = [
       "Riraryは、取引先や地域企業との関係性を大切にしながら、地域と事業の持続的な発展につながる連携を進めていきます。",
     ],
     links: [{ label: "パートナーシップ構築宣言の概要を見る", href: "https://www.biz-partnership.jp/outline.html" }],
+    promo: {
+      eyebrow: "PARTNERSHIP BUILDING DECLARATION",
+      title: "登録内容を資料でご覧いただけます",
+      description:
+        "パートナーシップ構築宣言のロゴと、登録企業として公表されたPDF資料を掲載しています。閲覧者の方は、Riraryの取り組みを資料でも確認できます。",
+      logo: {
+        src: "/images/news/partnership-building-declaration-logo.jpg",
+        alt: "パートナーシップ構築宣言のロゴ",
+      },
+      document: {
+        label: "PDF資料を見る",
+        href: "/documents/partnership-building-declaration-hokkaido.pdf",
+      },
+    },
   },
 ];

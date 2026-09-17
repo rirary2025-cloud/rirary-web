@@ -46,6 +46,8 @@ v1.0公開に必要な「事実確認済みデータ」をここに集める。�
 - 概要: 2026年5月に「パートナーシップ構築宣言」を行い、登録企業として公表されたことを掲載。
 - 本文: `app/content/news.ts` に集約
 - 関連リンク: https://www.biz-partnership.jp/outline.html
+- PR素材: パートナーシップ構築宣言ロゴ `/images/news/partnership-building-declaration-logo.jpg`
+- PDF資料: `/documents/partnership-building-declaration-hokkaido.pdf`
 
 ## Company / Contact
 
