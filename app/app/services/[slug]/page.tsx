@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { BreadcrumbJsonLd, FaqJsonLd, ServiceJsonLd } from "@/components/seo/json-ld";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContactBand } from "@/components/ui/contact-band";
 import { businesses } from "@/lib/site-data";
@@ -38,6 +39,9 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <main>
+      <BreadcrumbJsonLd items={[{ name: "HOME", url: "/" }, { name: "事業紹介", url: "/services" }, { name: item.ja, url: `/services/${item.slug}` }]} />
+      <ServiceJsonLd name={item.ja} description={item.description} serviceType={item.en} url={`/services/${item.slug}`} areaServed={item.slug === "cacao-import" ? "北海道・日本・西アフリカ" : "北海道"} />
+      {item.faq ? <FaqJsonLd items={item.faq} /> : null}
       <section className="page-hero service-detail-hero">
         <div className="site-container">
           <Breadcrumbs items={[{ label: "BUSINESS", href: "/services" }, { label: item.en }]} />
@@ -97,6 +101,20 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
               ))}
             </div>
+            {item.faq ? (
+              <section className="service-faq-panel" aria-labelledby={`${item.slug}-faq-title`}>
+                <span className="eyebrow">FAQ</span>
+                <h2 id={`${item.slug}-faq-title`}>よくある相談</h2>
+                <div>
+                  {item.faq.map((entry) => (
+                    <article key={entry.question}>
+                      <h3>{entry.question}</h3>
+                      <p>{entry.answer}</p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ) : null}
           </div>
         </div>
       </section>

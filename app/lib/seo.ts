@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteUrl = "https://www.rirary.net";
 export const siteName = "株式会社Rirary";
 export const defaultDescription =
-  "株式会社Riraryは、地方の自治体・地域企業・中小企業に向けて、デジタル、クリエイティブ、事業支援、コマース、地域活性化事業を展開しています。";
+  "株式会社Riraryは、北海道の地域企業・自治体・事業者に向けて、デジタル支援、クリエイティブ、事業支援、コマース、地域活性化事業を展開しています。";
 
 export function createMetadata({
   title,
@@ -17,10 +17,10 @@ export function createMetadata({
   const canonical = path === "/" ? "/" : path.replace(/\/$/, "");
   const resolvedTitle = title
     ? `${title}｜${siteName}`
-    : `${siteName}｜地方の課題を、新しい発想で解決する会社。`;
+    : `${siteName}｜北海道の地域課題を、新しい発想で解決する会社。`;
 
   return {
-    title: title ?? "地方の課題を、新しい発想で解決する会社。",
+    title: title ?? "北海道の地域課題を、新しい発想で解決する会社。",
     description,
     alternates: { canonical },
     openGraph: {

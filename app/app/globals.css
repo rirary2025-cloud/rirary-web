@@ -981,6 +981,39 @@ button { font: inherit; }
   color: var(--color-ink-soft);
   line-height: 1.9;
 }
+.service-faq-panel {
+  display: grid;
+  gap: 18px;
+  margin-top: 34px;
+  padding-top: 30px;
+  border-top: 1px solid var(--color-border);
+}
+.service-faq-panel h2 {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: 1.7rem;
+  letter-spacing: 0;
+}
+.service-faq-panel > div {
+  display: grid;
+  gap: 16px;
+}
+.service-faq-panel article {
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+}
+.service-faq-panel h3 {
+  margin: 0 0 10px;
+  color: var(--color-ink);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+.service-faq-panel p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  line-height: 1.8;
+}
 .section-soft { background: var(--color-surface); }
 .two-column-cards { display: grid; gap: 18px; }
 .info-panel { padding: 32px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-white); }

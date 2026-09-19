@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BreadcrumbJsonLd, NewsArticleJsonLd } from "@/components/seo/json-ld";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContactBand } from "@/components/ui/contact-band";
 import { news } from "@/content/news";
@@ -38,6 +39,8 @@ export default async function NewsDetailPage({ params }: Props) {
 
   return (
     <main>
+      <BreadcrumbJsonLd items={[{ name: "HOME", url: "/" }, { name: "お知らせ", url: "/news" }, { name: item.title, url: `/news/${item.slug}` }]} />
+      <NewsArticleJsonLd title={item.title} description={item.summary} url={`/news/${item.slug}`} datePublished={item.date} image={item.promo?.logo.src} />
       <section className="page-hero">
         <div className="site-container">
           <Breadcrumbs items={[{ label: "NEWS", href: "/news" }, { label: item.title }]} />
